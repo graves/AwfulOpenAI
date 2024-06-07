@@ -1,15 +1,15 @@
 Class {
-	#name : #AwfulOpenAIChatGUI,
+	#name : #AwfulClaudeAIChatGUI,
 	#superclass : #OpenAIChatGUI,
 	#category : #AwfulOpenAI
 }
 
 { #category : #accessing }
-AwfulOpenAIChatGUI class >> openWithSDK: anOpenAISDK [
+AwfulClaudeAIChatGUI class >> openWithSDK: anOpenAISDK [
 
 	| gui |
 	gui := self new chatSession:
-		       (OpenAIChatSession startWithSDK: anOpenAISDK).
+		       (AwfulClaudeChatSession startWithSDK: anOpenAISDK).
 	gui open.
 	gui fieldInput takeKeyboardFocus
 ]

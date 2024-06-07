@@ -5,7 +5,7 @@ Class {
 }
 
 { #category : #accessing }
-AwfulClaudeSDKChatCompletionChoices >> createWithAPIResponse: aResponse [
+AwfulClaudeSDKChatCompletionChoices class >> createWithAPIResponse: aResponse [
 
 	| aMessage |
 	aMessage := aResponse at: 'message'.
